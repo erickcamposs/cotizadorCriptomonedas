@@ -26,7 +26,7 @@ function obtenerCriptos(){
         .then(datos => descargarCriptos(datos.Data))
         .then(criptomonedas => imprimirCripts(criptomonedas))
 }
-//Promesa
+//Promesa para obtener las criptomonedas más populares
 const descargarCriptos = (criptomonedas) => new Promise(resolve => {
     resolve(criptomonedas);
 });
